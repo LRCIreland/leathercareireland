@@ -1,0 +1,11 @@
+# Site settings
+title: Leather Care Company Ireland
+email:
+author:
+description:
+url: http://leathercarecompanyireland.com
+
+# Build settings
+permalink: :title/
+sass:
+  sass_dir: css
