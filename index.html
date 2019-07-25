@@ -7,10 +7,61 @@ layout: default
 <!-- Page Content -->
 <section class="py-5">
   <div class="container">
-    <h2 class="font-weight-dark">{{ site.title }}</h2>
-    <p class="">
-      {{ site.title }} stock and sell all the essentials for your leather
-      restoration needs.
-    </p>
+    {% include about.html %}
   </div>
 </section>
+
+<!-- Modal -->
+<div
+  class="modal fade"
+  id="exampleModalCenter"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="exampleModalCenterTitle"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">
+          Sofa Sew Good
+        </h5>
+        <button
+          type="button"
+          class="close"
+          data-dismiss="modal"
+          aria-label="Close"
+        >
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>
+          For all leather repairs and restorations, we reccomend the province
+          wide service from Sofa Sew Good.
+        </p>
+        <p>
+          <strong
+            >On-site <br />
+            Furniture Repair <br />
+            Specialist</strong
+          >
+        </p>
+        <p><strong>Karen Bearns</strong></p>
+        <p>07734818010</p>
+        <p><strong>belfastsewgood@gmail.com</strong></p>
+        <p></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">
+          Close
+        </button>
+
+        <a href="https://shop.leatherrepaircompanyireland.com/">
+          <button type="button" class="btn btn-success">
+            Shop Leather Care <i class="fas fa-shopping-cart"></i></button
+        ></a>
+      </div>
+    </div>
+  </div>
+</div>

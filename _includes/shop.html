@@ -1,33 +1,42 @@
 <div class="container">
   <h3 class="h3">Shop Online with {{ site.title }}</h3>
   <div class="row">
+    {% for productInfo in site.data.productSheet %}
     <div class="col-md-3 col-sm-6">
       <div class="product-grid6">
         <div class="product-image6">
-          <a href="{{ site.data.products.product01InfoLink }}">
-            <img class="pic-1" src="/images/ProductPhotos/Brucle.JPG" />
+          <a href="{{ productInfo.productShopLink }}">
+            <img
+              class="pic-1"
+              src="/images/ProductPhotos/{{ productInfo.productImage }}.JPG"
+            />
           </a>
         </div>
         <div class="product-content">
-          <h3 class="title"><a href="#">Men's Shirt</a></h3>
-          <div class="price">
-            <p>{{ site.data.products.product01Price }}</p>
-            <span>
-              <p>{{ site.data.products.product01RRP }}</p>
-            </span>
+          <h3 class="title">
+            <a href="#">{{ productInfo.productName }}</a>
+          </h3>
+          <div class="desc">
+            <p>{{ productInfo.shortDescription }}</p>
           </div>
-          <a class="shopNow" href=""
+          <div class="price">
+            <p>{{ productInfo.shopPrice }}</p>
+          </div>
+          <a class="shopNow" href="{{ productInfo.productShopLink }}"
             >Shop Now <i class="fa fa-angle-right icon"></i
           ></a>
         </div>
         <ul class="social">
           <li>
-            <a href="{{ site.data.products.product01ShopNowLink }}"" data-tip="Add to Cart"
+            <a
+              href="{{ productInfo.productShopLink }}"
+              data-tip="{{ productInfo.productName }}"
               >Buy Now <i class="fa fa-shopping-cart"></i
             ></a>
           </li>
         </ul>
       </div>
     </div>
+    {% endfor %}
   </div>
 </div>
