@@ -1,9 +1,9 @@
 # Site settings
-title: Leather Care Company Ireland
+title: Leather Repair Company Ireland
 email:
 author:
-description: Leather Care Company Ireland
-url: http://leathercarecompanyireland.com
+description: Leather Repair Company Ireland
+url: https://leatherrepaircompanyireland.com
 
 # Build settings
 permalink: :title/
